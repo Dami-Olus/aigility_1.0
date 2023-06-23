@@ -8,7 +8,7 @@ import Avatar from "react-avatar";
 import { useBoardStore } from "@/store/BoardStore";
 
 function Header() {
-  const [searchString, setSearchString] = useBoardStore((state) => [
+  const [board, searchString, setSearchString] = useBoardStore((state) => [
     state.searchString,
     state.setSearchString,
   ])
